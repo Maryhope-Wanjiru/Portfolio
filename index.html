@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maryhope Wanjiru | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+  <a href="#about" class="logo">Maryhope</a>
+
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+  <ul id="nav-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <section class="hero">
+    <p id="greeting" class="greeting"></p>
+    <h1>Maryhope Wanjiru</h1>
+    <p>Bachelor of Science in Information Technology student</p>
+  </section>
+
+  <main>
+
+    <section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am doing a Bachelor of Science in Information Technology and I have a
+    certificate in Introduction to Microsoft Excel.
+  </p>
+  <p id="fact" class="fact">Click the button to learn more about me.</p>
+  <button id="fact-btn" class="btn">Tell me more</button>
+</section>
+    <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card skill">
+      <span class="icon">🗄️</span>
+      <h3>Database basics</h3>
+      <span class="level">Basic</span>
+    </div>
+    <div class="card skill">
+      <span class="icon">🐍</span>
+      <h3>Python</h3>
+      <span class="level">Beginner</span>
+    </div>
+    <div class="card skill">
+      <span class="icon">📊</span>
+      <h3>Microsoft Excel and spreadsheets</h3>
+      <span class="level">Certificate</span>
+    </div>
+  </div>
+</section>
+
+    <section id="project">
+  <h2>Project</h2>
+  <div class="cards single">
+    <div class="card">
+      <h3>Student Grading Project</h3>
+      <p>A project that records student marks and works out their grades.</p>
+
+      <h4>Tools used</h4>
+      <p>Python</p>
+
+      <h4>What I learned</h4>
+      <p>How to store marks, calculate averages and assign grades.</p>
+
+      <p><a href="https://github.com/your-username/grading-project">View project on GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+    <section id="contact">
+  <h2>Contact</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Email</h3>
+      <p><a href="mailto:gichuhihope@gmail.com">gichuhihope@gmail.com</a></p>
+    </div>
+    <div class="card">
+      <h3>GitHub</h3>
+      <p><a href="https://github.com/Maryhope-Wanjiru">github.com/Maryhope-Wanjiru</a></p>
+    </div>
+    <div class="card">
+      <h3>LinkedIn</h3>
+      <p><a href="https://www.linkedin.com/in/Mary Hope">linkedin.com/in/Mary Hope</a></p>
+    </div>
+  </div>
+  <form id="contact-form" novalidate>
+  <h3>Send me a message</h3>
+
+  <label for="name">Name</label>
+  <input type="text" id="name">
+  <span class="error" id="name-error"></span>
+
+  <label for="email">Email</label>
+  <input type="email" id="email">
+  <span class="error" id="email-error"></span>
+
+  <label for="message">Message</label>
+  <textarea id="message" rows="5"></textarea>
+  <span class="error" id="message-error"></span>
+
+  <button type="submit" class="btn">Send message</button>
+  <p id="form-status" class="form-status"></p>
+</form>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Maryhope Wanjiru</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</body>
+</html>
